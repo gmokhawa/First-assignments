@@ -5,8 +5,11 @@
 
 #by considering the terms in the Fibonacci sequence whose values do not exceed 4000, this program finds the sums of the multiples of 5.
 
-def fib(n):
-    a, b = 0, 1
-    for i in range(n):
+
+a, b = 0, 1
+total=0
+for i in range(15):
+    if a%5==0:
+        total=total+a
         a, b = b, a + b
-        print a
+    print total     
